@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body{
+  font-family: "Jost", sans-serif;
+  background-color: #f0f8ffc4;
+ 
+}
+.container{
+  max-width: 100% !important;
+  padding: 0 2rem;
+
+}
+.leftcol{
+  background-image: url('../src/assets/young-man-working-office-with-colleague.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+}
+.bannerimage{
+  display: block;
+    border-radius: 15px;
+    box-shadow: 0 0 10PX #CCCC;
+}
+
+
+@media (max-width:792px) {
+  body{
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+  .textwrapper{
+    box-shadow: 0 0 10px #ccc;
+    background: #fff;
+    max-width: 95%;
+    margin: 0 auto;
+    border-radius: 13px;
+    position: relative;
+    margin-top: -4rem;
+    z-index: 99;
+    border-top: 3px solid #0c3493 ;
+  }
+}
+.nextbutton{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media (max-width:1000px){
+  .sliderbutton{
+    content: "";
+    position: absolute;
+    top: 128px!important;
+  }
+}
+.subtitle::before{
+  
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #0c3493;
+  bottom: -6px;
+  left: 50%;
+  
+}
+.actionbox{
+  background:linear-gradient(#89abfaa5, #89abfaa5), url(/src/assets/actionbox.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.footer{
+  background-image: url('../src/assets/footerimage.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
