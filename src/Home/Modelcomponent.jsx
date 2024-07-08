@@ -158,6 +158,7 @@ const Modelcomponent = ({ visible, onClose }) => {
                                 <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                                     {
                                         !userform ? (showotp ? <>
+                                            name
                                             <OTPInput
                                                 value={otpmatch}
                                                 onChange={setotpmatch}
