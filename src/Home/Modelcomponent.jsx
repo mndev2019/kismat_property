@@ -166,7 +166,7 @@ const Modelcomponent = ({ visible, onClose }) => {
                                                     onChange={setotpmatch}
                                                     id="otp"
                                                     numInputs={6}
-                                                    autoFocus
+
                                                     className="form-control"
                                                     inputStyle={{ width: "50px" }}
                                                     renderSeparator={<span className="me-2"> </span>}

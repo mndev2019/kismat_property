@@ -79,7 +79,7 @@ const Home = () => {
                     <div className="flex items-center flex-wrap">
                         <div className="lg:w-1/2 w-full lg:order-1 order-2">
                             <div className="w-full textwrapper lg:p-10 p-5 z-[9]">
-                                <h1 className=" lg:text-[2.5rem] md:text-[2rem] lg:mb-10 mb-4  text-[1.4rem] font-bold text-[#100d84f2]  lg:text-left text-center ">Property to kismat se milti aur bikti hai  <span className="block"></span>  <Link to={'/'} className="text-black border-b border-black  lg:mb-10 mb-2  p-2 lg:text-[2rem] md:text-[2rem]  lg:text-left text-center inline-block mx-auto">kismatproperty.com</Link></h1>
+                                <h1 className=" lg:text-[2.5rem] md:text-[2rem] lg:mb-10 mb-4  text-[1.4rem] font-bold text-[#100d84f2]  lg:text-left text-center ">Property tho kismat se milti aur bikti hai  <span className="block"></span>  <Link to={'/'} className="text-black border-b border-black  lg:mb-10 mb-2  p-2 lg:text-[2rem] md:text-[2rem]  lg:text-left text-center inline-block mx-auto">kismatproperty.com</Link></h1>
                                 <div className="w-full  pt-5">
                                     <div className="flex gap-2 pb-5 justify-center md:justify-start">
                                         {
