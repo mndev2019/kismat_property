@@ -21,26 +21,6 @@ const Modelcomponent = ({ visible, onClose }) => {
     const [thanks, setthanks] = useState(false)
 
 
-    useEffect(() => {
-        if ('OTPCredential' in window) {
-            const ac = new AbortController();
-            navigator.credentials.get({
-                otp: { transport: ['sms'] },
-                signal: ac.signal
-            }).then(otp => {
-                if (otp) {
-                    setotpmatch(otp.code); // Update the state with the received OTP code
-                    alert(otp.code)
-                }
-            }).catch(err => {
-                console.log(err);
-            });
-
-            return () => {
-                ac.abort();
-            };
-        }
-    }, []);
 
 
     const [showOtherArea, setShowOtherArea] = useState(false);
@@ -158,7 +138,7 @@ const Modelcomponent = ({ visible, onClose }) => {
                                 <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                                     {
                                         !userform ? (showotp ? <>
-                                            namechangefd
+
                                             <OTPInput
                                                 value={otpmatch}
                                                 onChange={setotpmatch}
