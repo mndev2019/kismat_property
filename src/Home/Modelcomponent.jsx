@@ -158,7 +158,7 @@ const Modelcomponent = ({ visible, onClose }) => {
                                 <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                                     {
                                         !userform ? (showotp ? <>
-                                            name
+                                            namechange
                                             <OTPInput
                                                 value={otpmatch}
                                                 onChange={setotpmatch}
@@ -171,6 +171,7 @@ const Modelcomponent = ({ visible, onClose }) => {
                                                 renderInput={(props) => (
                                                     <input
                                                         {...props}
+                                                        autoFocus
                                                         inputMode="numeric"
                                                         pattern="[0-9]*"
                                                     />
