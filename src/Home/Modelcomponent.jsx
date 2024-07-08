@@ -139,24 +139,7 @@ const Modelcomponent = ({ visible, onClose }) => {
                                     {
                                         !userform ? (showotp ? <>
 
-                                            <OTPInput
-                                                value={otpmatch}
-                                                onChange={setotpmatch}
-                                                id="otp"
-                                                numInputs={6}
-                                                autoFocus  // Optional: autoFocus on the OTPInput component itself
-                                                className="form-control"
-                                                inputStyle={{ width: "50px" }}
-                                                renderSeparator={<span className="me-2"> </span>}
-                                                renderInput={(props, index) => (
-                                                    <input
-                                                        {...props}
-                                                        autoFocus={index === 0}  // Autofocus only on the first input
-                                                        inputMode="numeric"
-                                                        pattern="[0-9]*"
-                                                    />
-                                                )}
-                                            />
+
                                             <h3 className="text-2xl leading-6 font-medium text-gray-900 mt-8">Enter your Phone number</h3>
                                             <div className="mt-3">
                                                 <p className="text-md text-[#0d6efd] font-semibold">We will send you a verification code on the same number.</p>
