@@ -178,7 +178,7 @@ const Modelcomponent = ({ visible, onClose }) => {
                                                 <p className="text-gray-500  mb-0" style={{ fontSize: "14px", fontWeight: "500" }}>We sent a 6-digit code to</p>
                                                 <p className="text-gray-500  mb-3" style={{ fontSize: "14px", fontWeight: "500" }}>{otpnumber}</p>
                                                 <p></p>
-                                                <OTPInput
+                                                {/* <OTPInput
                                                     value={otpmatch}
                                                     onChange={setotpmatch}
                                                     id="otp"
@@ -193,7 +193,8 @@ const Modelcomponent = ({ visible, onClose }) => {
                                                             pattern="[0-9]*" // Optional: specify pattern to restrict input to numbers
                                                         />
                                                     )}
-                                                />
+                                                /> */}
+                                                <input type="text" value={otpmatch} onChange={(e) => setotpmatch(e.target.value)} />
                                                 <p className="text-dark font-bold mt-3 text-underline" onClick={(e) => handleOtp(e)} style={{ fontSize: "14px", cursor: "pointer" }}>Resend Code</p>
                                                 <div className="  py-3 pb-6  sm:flex">
                                                     <button onClick={handleVerify} className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-8 py-2 bg-[#0d6efd] text-base font-medium text-white  focus:outline-none focus:ring-2 focus:ring-offset-2  sm:ml-3 sm:w-auto sm:text-sm">
