@@ -157,7 +157,23 @@ const Modelcomponent = ({ visible, onClose }) => {
                                 <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                                     {
                                         !userform ? (showotp ? <>
-                                            name
+                                            <OTPInput
+                                                value={otpmatch}
+                                                onChange={setotpmatch}
+                                                id="otp"
+                                                numInputs={6}
+                                                autoFocus
+                                                className="form-control"
+                                                inputStyle={{ width: "50px" }}
+                                                renderSeparator={<span className="me-2"> </span>}
+                                                renderInput={(props) => (
+                                                    <input
+                                                        {...props}
+                                                        inputMode="numeric"
+                                                        pattern="[0-9]*"
+                                                    />
+                                                )}
+                                            />
                                             <h3 className="text-2xl leading-6 font-medium text-gray-900 mt-8">Enter your Phone number</h3>
                                             <div className="mt-3">
                                                 <p className="text-md text-[#0d6efd] font-semibold">We will send you a verification code on the same number.</p>
