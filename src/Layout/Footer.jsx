@@ -47,7 +47,7 @@ const Footer = () => {
       <section className='bg-black'>
         <div className="w-full">
           <div className="w-full text-white text-center text-sm p-3">
-           <p className='text-white'>Copyright 2024, All Rights Reserved <Link to={'/'} className='text-gray-400'>Kismat Property</Link> </p>
+            <p className='text-white'>Copyright 2024, All Rights Reserved <Link to={'/'} className='text-gray-400'>Kismat Property</Link> </p>
           </div>
         </div>
       </section>

@@ -29,7 +29,7 @@ const Categories = () => {
               <div className="w-full h-full border border-blue-100 shadow-md shadow-[#7270a0f2] rounded-xl p-10 bg-white">
                 <img src={category2} alt='image'></img>
                 <h1 className='text-black text-[1.5rem] font-bold pt-5'>Home Buying</h1>
-                <p className='text-black text-lg pt-3 '>Planning to buy home? We offer a range of assistance to make the home buying process smoother and more convenient for the buyer. the buyer.</p>
+                <p className='text-black text-lg pt-3 '>Planning to buy home? We offer a range of assistance to make the home buying process smoother and more convenient for the buyer.</p>
               </div>
             
           </div>

@@ -1,6 +1,10 @@
 //import React from 'react'
+import { useState } from 'react'
 import enquiry from '../assets/enquiry.png'
+import Modelcomponent from './Modelcomponent'
 const Enquiry = () => {
+    const [showMyModal, setShowMyModal] = useState(false)
+    const handleOnClose = () => setShowMyModal(false)
     return (
         <>
             <section className='lg:p-20 p-10 bg-white'>
@@ -21,14 +25,16 @@ const Enquiry = () => {
                         <div className="col-span-1">
                             <div className="w-full lg:p-10 p-10 lg:text-left text-center ">
                                 <p className='text-lg'>Get in touch with us to Sell or Rent Your Projects</p>
-                                <div className='pb-5 text-lg'>For Builder Enquiries: +91 91080 50400</div>
-                                <button className="text-white  text-[12px]  bg-[#0c3493]  px-2 py-2  lg:rounded-lg rounded-md
+                                <div className='pb-5 text-lg'>For Builder Enquiries: +91-8595076589</div>
+                                <button onClick={() => setShowMyModal(true)} className="text-white  text-[12px]  bg-[#0c3493]  px-2 py-2  lg:rounded-lg rounded-md
                                 ">CONTACT US</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <Modelcomponent onClose={handleOnClose} visible={showMyModal} />
         </>
     )
 }

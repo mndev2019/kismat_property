@@ -12,13 +12,13 @@ const ThemeNavbar = () => {
                             <div className="w-full lg:flex lg:justify-between  items-center">
                                 <div>
                                     <img src={logo} alt="image" className="h-[70px] w-[200px] mx-auto"></img>
-                                    
+
                                 </div>
                                 <div className="lg:block hidden">
-                                    <Link to={'/'}  className="text-[#100d84f2] text-2xl pr-2">
+                                    <Link to={'/'} className="text-[#100d84f2] text-2xl pr-2">
                                         <PhoneOutlined />
                                     </Link>
-                                    <span className="text-black font-normal text-lg">+91-9100523011</span>
+                                    <span className="text-black font-normal text-lg">+91-8595076589</span>
                                 </div>
                             </div>
                         </div>
