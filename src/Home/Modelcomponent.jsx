@@ -11,7 +11,7 @@ import check from "../assets/check.png"
 
 
 const Modelcomponent = ({ visible, onClose }) => {
-
+    if (!visible) return null;
     const [otpnumber, setotpnumber] = useState("")
     const [loading, setloading] = useState(false)
     const [otpmatch, setotpmatch] = useState("")
@@ -129,7 +129,7 @@ const Modelcomponent = ({ visible, onClose }) => {
 
 
 
-    if (!visible) return null;
+
 
     return (
         <>
