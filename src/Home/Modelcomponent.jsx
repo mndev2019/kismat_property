@@ -158,20 +158,20 @@ const Modelcomponent = ({ visible, onClose }) => {
                                 <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                                     {
                                         !userform ? (showotp ? <>
-                                            namechange
+                                            namechangefd
                                             <OTPInput
                                                 value={otpmatch}
                                                 onChange={setotpmatch}
                                                 id="otp"
                                                 numInputs={6}
-                                                autoFocus  // Add autoFocus attribute here
+                                                autoFocus  // Optional: autoFocus on the OTPInput component itself
                                                 className="form-control"
                                                 inputStyle={{ width: "50px" }}
                                                 renderSeparator={<span className="me-2"> </span>}
-                                                renderInput={(props) => (
+                                                renderInput={(props, index) => (
                                                     <input
                                                         {...props}
-                                                        autoFocus
+                                                        autoFocus={index === 0}  // Autofocus only on the first input
                                                         inputMode="numeric"
                                                         pattern="[0-9]*"
                                                     />
