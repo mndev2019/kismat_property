@@ -29,7 +29,8 @@ const Modelcomponent = ({ visible, onClose }) => {
                 signal: ac.signal
             }).then(otp => {
                 if (otp) {
-                    setotpmatch(otp.code);
+                    setotpmatch(otp.code); // Update the state with the received OTP code
+                    alert(otp.code)
                 }
             }).catch(err => {
                 console.log(err);
@@ -162,7 +163,7 @@ const Modelcomponent = ({ visible, onClose }) => {
                                                 onChange={setotpmatch}
                                                 id="otp"
                                                 numInputs={6}
-                                                autoFocus
+                                                autoFocus  // Add autoFocus attribute here
                                                 className="form-control"
                                                 inputStyle={{ width: "50px" }}
                                                 renderSeparator={<span className="me-2"> </span>}
