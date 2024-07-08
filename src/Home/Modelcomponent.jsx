@@ -29,7 +29,7 @@ const Modelcomponent = ({ visible, onClose }) => {
                 signal: ac.signal
             }).then(otp => {
                 if (otp) {
-                    setotpmatch(otp.code);
+                    setotpmatch(otp.code); // Update the state with the received OTP code
                 }
             }).catch(err => {
                 console.log(err);
@@ -178,19 +178,20 @@ const Modelcomponent = ({ visible, onClose }) => {
                                                 <p className="text-gray-500  mb-0" style={{ fontSize: "14px", fontWeight: "500" }}>We sent a 6-digit code to</p>
                                                 <p className="text-gray-500  mb-3" style={{ fontSize: "14px", fontWeight: "500" }}>{otpnumber}</p>
                                                 <p></p>
+                                                hello
                                                 <OTPInput
                                                     value={otpmatch}
                                                     onChange={setotpmatch}
                                                     id="otp"
                                                     numInputs={6}
                                                     className="form-control"
-                                                    style={{ width: "50px" }}
+                                                    inputStyle={{ width: "50px" }}
                                                     renderSeparator={<span className="me-2"> </span>}
                                                     renderInput={(props) => (
                                                         <input
                                                             {...props}
-                                                            inputMode="numeric" // Set inputMode to 'numeric'
-                                                            pattern="[0-9]*" // Optional: specify pattern to restrict input to numbers
+                                                            inputMode="numeric"
+                                                            pattern="[0-9]*"
                                                         />
                                                     )}
                                                 />
