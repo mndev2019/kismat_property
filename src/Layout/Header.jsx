@@ -4,9 +4,9 @@ import ThemeNavbar from "./ThemeNavbar"
 
 const Header = () => {
   return (
-   <>
-    <ThemeNavbar/>
-   </>
+    <>
+      <ThemeNavbar />
+    </>
   )
 }
 

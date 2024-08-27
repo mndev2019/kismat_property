@@ -81,7 +81,7 @@ body {
 }
 
 .actionbox {
-  background: linear-gradient(#89abfaa5, #89abfaa5), url(/src/assets/actionbox.jpg);
+  background: linear-gradient(#89abfae3, #89abfaa6), url(/src/assets/actionbox.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

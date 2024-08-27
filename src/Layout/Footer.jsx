@@ -1,17 +1,22 @@
 //import React from 'react'
 import { FacebookOutlined, InstagramOutlined, TwitterOutlined } from '@ant-design/icons'
-import logo from '../assets/footer.png'
+import logo from '../assets/logo.png'
+import mainlogo from "../assets/mainlogo.png"
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <>
       <section className="lg:p-20 p-10 bg-gray-900 footer">
-        <div className="container mx-auto">
+        <div className=" sm:container sm:mx-auto">
           <div className="grid lg:grid-cols-3 grid-cols-1 gap-5">
             <div className="col-span-1">
               <div className="w-full footer-box">
-                <img src={logo} alt='image' className='bg-[white] rounded-lg h-[70px]'></img>
+                {/* <img src={logo} alt='image' className='bg-[white] rounded-lg w-[250px] h-[70px]'></img> */}
+                <div className="flex gap-2 items-center  w-max  bg-[white] rounded-lg">
+                  <img src={mainlogo} className="h-[70px] mx-auto lg:mx-0" alt="Main Logo" />
+                  <img src={logo} alt="Logo" className="w-[250px] h-[70px] mx-auto lg:mx-0" />
+                </div>
               </div>
             </div>
             <div className="col-span-1">

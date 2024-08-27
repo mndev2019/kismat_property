@@ -18,6 +18,8 @@ const Modelcomponent = ({ visible, onClose }) => {
     const [name, setname] = useState("")
     const [email, setemail] = useState("")
     const [area, setarea] = useState("")
+    const [requirement, setrequirement] = useState("")
+
     const [thanks, setthanks] = useState(false)
 
 
@@ -85,7 +87,8 @@ const Modelcomponent = ({ visible, onClose }) => {
             phone: otpnumber,
             name: name,
             email: email,
-            area: area == "other" ? otherArea : area
+            area: area == "other" ? otherArea : area,
+            requirement: requirement
         };
         axios.post(`https://projectbeatrecords.in:2130/send_email`, requestdata).then((res) => {
             console.log(res);
@@ -203,7 +206,7 @@ const Modelcomponent = ({ visible, onClose }) => {
                                                         <select
                                                             value={area}
                                                             onChange={handleAreaChange}
-                                                            className="rounded-md bg-white text-black w-full py-2 px-3 outline-none appearance-none pr-8"
+                                                            className="rounded-md mb-3 bg-white text-black w-full py-2 px-3 outline-none appearance-none pr-8"
                                                         >
                                                             <option value="">Select Area</option>
                                                             <option value="ncr">NCR</option>
@@ -226,6 +229,13 @@ const Modelcomponent = ({ visible, onClose }) => {
                                                             />
                                                         )}
                                                     </div>
+                                                    <label htmlFor="" className='font-bold text-start '>Breif Your Requirements</label>
+                                                    <textarea
+                                                        value={requirement}
+                                                        onChange={(e) => setrequirement(e.target.value)}
+                                                        placeholder="Breif Your Requirements"
+                                                        className="rounded-md bg-white text-black w-full py-2 px-3 outline-none mt-2"
+                                                    />
                                                 </div>
                                                 <div className="  py-3 pb-6  sm:flex">
                                                     <button className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-8 py-2 bg-[#0d6efd] text-base font-medium text-white  focus:outline-none focus:ring-2 focus:ring-offset-2  sm:ml-3 sm:w-auto sm:text-sm">
